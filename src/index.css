@@ -25,16 +25,20 @@
   background: linear-gradient(to right, #434343, #000000);
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.white-gradient {
+  background: #ffffff;
+  background: linear-gradient(-90deg, #ffffff 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
 }
 
-.green-pink-gradient {
-  background: #00cea8;
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+.white-blue-gradient {
+  background: #dbe9f3;
+  background: linear-gradient(90.13deg, #dbe9f3 1.9%, #2e5894 97.5%);
+  background: -webkit-linear-gradient(90.13deg, #dbe9f3 1.9%, #2e5894 97.5%);
 }
 
 .orange-text-gradient,
@@ -52,12 +56,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by modifying the last value (0.5 in this case) */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity by modifying the last value (0.5 in this case) */
   z-index: 9999; /* Adjust the z-index to ensure it's displayed above other elements if necessary */
 }
 
 @keyframes spin {
-  0%, 100% {
+  0%,
+  100% {
     /* Box shadow styles */
   }
   12.5% {
@@ -115,7 +125,7 @@
 }
 
 .input {
-  background: #333; /* Background color */
+  background: #568aad; /* Background color */
   padding: 16px 24px;
   color: #fff;
   border: none;

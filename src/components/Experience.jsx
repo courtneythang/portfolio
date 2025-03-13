@@ -1,24 +1,44 @@
+import { motion } from "framer-motion";
 import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => (
-  <VerticalTimelineElement
+const ExperienceCard = ({ experience }) => {
+  const hyperlinkText = (text) => {
+    const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+)/g;
+    return text.split(urlRegex).map((part, index) => 
+      urlRegex.test(part) ? (
+        <a
+          key={index}
+          href={part.startsWith("http") ? part : `https://${part}`}
+          className="text-emerald-200 hover:text-emerald-400 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {part}
+        </a>
+      ) : (
+        part
+      )
+    );
+  };
+
+  return (
+      <VerticalTimelineElement
     contentStyle={{
-      background: "#1d1836",
+      background: "#6d96b5",
       color: "#fff",
     }}
-    contentArrowStyle={{ borderRight: "7px solid #232631" }}
+    contentArrowStyle={{ borderRight: "7px solid #6d96b5" }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
@@ -26,7 +46,8 @@ const ExperienceCard = ({ experience }) => (
         <img
           src={experience.icon}
           alt={experience.company_name}
-          className="w-[60%] h-[60%] object-contain"
+          className="w-[100%] h-[100%] object-contain"
+          style={{borderRadius:'50%'}}
         />
       </div>
     }
@@ -44,12 +65,13 @@ const ExperienceCard = ({ experience }) => (
           key={`experience-point-${index}`}
           className="text-white-100 text-[14px] pl-1 tracking-wider"
         >
-          {point}
+          {hyperlinkText(point)}
         </li>
       ))}
     </ul>
   </VerticalTimelineElement>
-);
+  );
+};
 
 const Experience = () => (
   <>

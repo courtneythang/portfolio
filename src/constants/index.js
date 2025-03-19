@@ -32,10 +32,10 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  // {
+  //   id: "contact",
+  //   title: "Contact",
+  // },
 ];
 
 export const services = [
@@ -66,7 +66,7 @@ export const experiences = [
     title: "Associate Software Developer 2",
     company_name: "Auto-Owners Insurance",
     icon: aologo,
-    iconBg: "#161329",
+    iconBg: "#ffffff",
     date: "August 2023 - Current",
     points: [
       "Modernized customer facing web application to React https://www.auto-owners.com",
@@ -78,7 +78,7 @@ export const experiences = [
     title: "Software Developer Intern",
     company_name: "Auto-Owners Insurance",
     icon: aologo,
-    iconBg: "#161329",
+    iconBg: "#ffffff",
     date: "May 2023 - August 2023",
     points: [
       "Developed a mock banking application in Java that managed savings, checking, and loan accounts",
@@ -90,7 +90,7 @@ export const experiences = [
     title: "Teaching Assistant",
     company_name: "Girls Who Code",
     icon: gwclogo,
-    iconBg: "#161329",
+    iconBg: "#ffffff",
     date: "June 2022 - August 2022",
     points: [
       "Instructed web development classes consisting of 50-65 high school students",

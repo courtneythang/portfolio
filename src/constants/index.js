@@ -70,8 +70,9 @@ export const experiences = [
     date: "August 2023 - Current",
     points: [
       "Modernized customer facing web application to React https://www.auto-owners.com",
+      "Developed and integrated new API endpoints intended for native mobile apps and web apps to share for customer and policy retrieval",
       "Contributed to the development of agent facing and customer facing Life Insurance web applications for disability income",
-      "Renewed legacy Life Insurance Java applications to modern web application frameworks",
+      "Renewed legacy applications to modern web application frameworks such as React",
     ],
   },
   {
@@ -100,76 +101,24 @@ export const experiences = [
 ];
 
 export const projects = [
-  // {
-  //   name: "WeatherPedia",
-  //   description:
-  //     "Web-based platform that allows users to access weather information for their location by entering it in the search field",
-  //   tags: [
-  //     { name: "Javascript", color: "blue-text-gradient" },
-  //     { name: "HTML", color: "green-text-gradient" },
-  //     { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-  //     { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
-  //   ],
-  //   image: weatherpedia,
-  //   source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
-  // },
-  // {
-  //   name: "Terminal Like Portfolio Website",
-  //   description:
-  //     "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
-  //   tags: [
-  //     { name: "HTML", color: "blue-text-gradient" },
-  //     { name: "css", color: "green-text-gradient" },
-  //     { name: "Javascript", color: "pink-text-gradient" },
-  //   ],
-  //   image: termpw,
-  //   source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
-  // },
-  // {
-  //   name: "Mental Health Fitness Tracker",
-  //   description:
-  //     "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
-  //   tags: [
-  //     { name: "Machine Learning", color: "blue-text-gradient" },
-  //     { name: "Jupyter Notebook", color: "green-text-gradient" },
-  //     { name: "Regression Algorithms", color: "pink-text-gradient" },
-  //   ],
-  //   image: mhft,
-  //   source_code_link:
-  //     "https://github.com/lohitkolluri/mental_health_fitness_tracker",
-  // },
-  // {
-  //   name: "PayloadMaster",
-  //   description:
-  //     "Tool to automate payload creation using the Metasploit framework",
-  //   tags: [
-  //     { name: "shell", color: "blue-text-gradient" },
-  //   ],
-  //   image: payloadmaster,
-  //   source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
-  // },
-  // {
-  //   name: "CompileVortex",
-  //   description:
-  //     "Tool to automate payload creation using the Metasploit framework",
-  //   tags: [
-  //     { name: "Javascript", color: "blue-text-gradient" },
-  //     { name: "CSS", color: "green-text-gradient" },
-  //     { name: "HTML", color: "pink-text-gradient" },
-  //   ],
-  //   image: CompileVortex,
-  //   source_code_link: "https://github.com/lohitkolluri/CompileVortex",
-  // },
-  // {
-  //   name: "Sketcher",
-  //   description:
-  //     "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
-  //   tags: [
-  //     { name: "OpenCV", color: "blue-text-gradient" },
-  //     { name: "Matplotlib", color: "green-text-gradient" },
-  //     { name: "Python", color: "pink-text-gradient" },
-  //   ],
-  //   image: sketcher,
-  //   source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
-  // },
+  {
+    name: "Digibooth",
+    description:
+      "Web application inspired by a photobooth that captures images using a webcam and produces a photostrip",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+    ],
+    source_code_link: "https://github.com/courtneythang/digibooth",
+  },
+  {
+    name: "Wordle-Infinite",
+    description: "Wordle Clone developed in React with infinite words",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "WordsAPI", color: "yellow-text-gradient" },
+    ],
+    source_code_link: "https://github.com/courtneythang/wordle-infinite",
+  },
 ];

@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ name, description, tags, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring")}>
       <Tilt
@@ -17,20 +17,15 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full"
       >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+        <div className="relative w-full ">
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
+              <img src={github} alt="source code" className="object-contain" />
             </div>
           </div>
         </div>
@@ -58,10 +53,11 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
       <div className="w-full flex">
-        <motion.p variants={fadeIn("", "", 0.1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcase my skills and experience through examples
-          of my work. Each project is briefly described with links to code
-          repositories in it.
+        <motion.p
+          variants={fadeIn("", "", 0.1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          Each project is briefly described with git links to the repositories.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

@@ -84,7 +84,7 @@ export const experiences = [
     points: [
       "Developed a mock banking application in Java that managed savings, checking, and loan accounts",
       "Constructed a mock insurance web application determining insurance costs and quotes",
-      "Implemented a Java batch application that retreived insurance data through csv's then processed and converted that data to a readable receipt format",
+      "Implemented a Java batch application that retrieved insurance data through csv's then processed and converted that data to a readable receipt format",
     ],
   },
   {

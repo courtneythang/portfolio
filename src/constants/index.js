@@ -102,14 +102,31 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "Chat App",
+    description: "Full stacs text messaging web application",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "blue-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Express JS", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+    ],
+    source_code_link: "https://github.com/courtneythang/chat-app",
+    deploy_link: "https://chat-app-vdhz.onrender.com/login",
+  },
+  {
     name: "Digibooth",
     description:
       "Web application inspired by a photobooth that captures images using a webcam and produces a photostrip",
     tags: [
       { name: "React", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
     ],
     source_code_link: "https://github.com/courtneythang/digibooth",
+    deploy_link: "https://courtneythang.github.io/digibooth/",
   },
   {
     name: "Wordle-Infinite",
@@ -117,8 +134,10 @@ export const projects = [
     tags: [
       { name: "React", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
-      { name: "WordsAPI", color: "yellow-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "WordsAPI", color: "green-text-gradient" },
     ],
     source_code_link: "https://github.com/courtneythang/wordle-infinite",
+    deploy_link: "https://courtneythang.github.io/wordle-infinite/",
   },
 ];

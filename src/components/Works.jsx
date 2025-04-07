@@ -8,9 +8,18 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ name, description, tags, source_code_link }) => {
+const ProjectCard = ({
+  name,
+  description,
+  tags,
+  source_code_link,
+  deploy_link,
+}) => {
   return (
-    <motion.div variants={fadeIn("up", "spring")}>
+    <motion.div
+      variants={fadeIn("up", "spring")}
+      onClick={() => window.open(deploy_link, "_blank")}
+    >
       <Tilt
         options={{
           max: 45,
